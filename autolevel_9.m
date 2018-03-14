@@ -22,9 +22,10 @@ for i = 1:m:rows
         [m2,col]=min(m1); %col number and grelevel in submatrix
         row=r(col); %row number in submatrix
         I(count) = m2; % put the greylevel of background pixel into I
-        y(count) = i+row-1; % put the row number of pixel into y
-        x(count) = j+col-1; % put the col number of pixel into x
-        count = count +1;
+
+y(count) = i+row-1; % put the row number of pixel into x
+        x(count) = j+col-1; % put the col number of pixel into y
+   count = count +1;
     end
 end
 disp(x);

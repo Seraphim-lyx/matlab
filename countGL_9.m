@@ -21,8 +21,9 @@ v=linspace(0,0,a);
          
          for row=1:rows
             for col=1:columns
-                grayLevel = double(im(row,col)); % Get the gray level.
-                grayLevel=grayLevel+1; 
+grayLevel = double(im(row,col)); % Get the gray level.
+
+grayLevel=grayLevel+1; 
                 v(1,grayLevel) = v(1,grayLevel) + 1;% Add 1 because graylevel zero goes into index 1 and so on.
             end
          end
